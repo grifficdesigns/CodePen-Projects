@@ -1,0 +1,13 @@
+<body>
+  <div class="outer">
+    <div class="inner">
+      <h1>How old are you in dog years?</h1>
+      <form>
+        <input class="input" type="number" min="0" oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" placeholder="Enter age" id="years" required />
+        <input class="button" type="button" value="Convert" onclick="ageInDogYears()" />
+      </form>
+      <p class="result" id="text"> You are: <span id="result"> </span>
+      </p>
+    </div>
+  </div>
+</body>

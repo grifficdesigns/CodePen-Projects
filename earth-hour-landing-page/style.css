@@ -1,0 +1,129 @@
+body {
+  background: black;
+  margin: auto;
+  background-image: url("https://github.com/grifficdesigns/CodePen-Projects/blob/main/2022/Earth%20Hour%20Landing%20Page/earth%20landing%20stars.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cover {
+  background-image: url("https://github.com/grifficdesigns/CodePen-Projects/blob/main/2022/Earth%20Hour%20Landing%20Page/earth%20landing%20planet.png?raw=true");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: block;
+  min-height: 100vh;
+  width: 80%;
+  margin-left: 10%;
+  bottom: 0;
+  z-index: -999;
+}
+
+@media (orientation: landscape) {
+  .cover {
+    background-size: cover;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+}
+
+.main {
+  top: 15%;
+  left: 25%;
+  right: 25%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 0px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+h1 {
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  margin-top: 10%;
+}
+
+h2 {
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+  margin-top: -6%;
+  margin-bottom: 10%;
+}
+
+.navbar {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.75) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  display: block;
+  text-align: right;
+  line-height: 1rem;
+  padding: 1rem 2%;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+ul {
+  font-family: museo-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
